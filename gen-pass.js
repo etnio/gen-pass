@@ -1,9 +1,3 @@
-var random_num = new Uint32Array(8); // 2048 = number length in bits
-window.crypto.getRandomValues(random_num);
-
-console.log(String(random_num));
-
-
 
 const characters = {
     default:  'abcdefghijklmnopqrstuvwxyz',
@@ -12,29 +6,9 @@ const characters = {
     symbols: '~!@-#$'
 }
 
-console.log(characters);
+console.log(characters.symbols+characters.default);
 
+let arr1 = characters.default + characters.uppercase + characters.numbers + characters.symbols;
 
+console.log(arr1);
 
-
-
-
-// const generatePassword = () => {
-//     const defaultCharacters = 'abcdefghijklmnopqrstuvwxyz'
-//     const characters = {
-//         uppercase: defaultCharacters.toUpperCase(),
-//         numbers: '0123456789',
-//         symbols: '~!@-#$'
-//     }
-// }
-
-
-
-
-
-// self.crypto.getRandomValues(array);
-
-// console.log("Your lucky numbers:");
-// for (const num of array) {
-//   console.log(num);
-// }
